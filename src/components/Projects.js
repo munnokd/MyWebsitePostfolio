@@ -1,11 +1,74 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Ecomerce from '../assests/ecom.png'
+import Pinterest from '../assests/pint.png'
+import ssa from '../assests/ssa.png'
+import Tesla from '../assests/tesla.png'
+import { CgClose } from 'react-icons/cg'
+import { SiGithub } from 'react-icons/si'
+import { RiLink } from 'react-icons/ri'
+import { Transition } from '@headlessui/react'
 
 const Projects = () => {
+    const [showModal, setShowModal] = useState(false);
+
     return (
-        <div name='projects' className='h-[80vh] flex flex-col items-center '>
+        <div name='projects' className='h-[100%] flex flex-col items-center mb-[100px]'>
             <div className='md:w-[90%] lg:w-[70%] flex flex-col items-center'>
-                <h1 className='text-5xl font-bold mb-5'>Projects</h1>
+                <h1 className='text-5xl font-bold mb-[55px] mt-[80px]'>Projects</h1>
+                <div className='grid grid-cols-1 gap-y-5 md:grid-cols-2'>
+                    <div className='box_shadow rounded-[10px] mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowModal(true)}>
+                        <img className='rounded-[10px]' src={Ecomerce} alt='Ecommerce' />
+                        <p className='text-[25px] font-[700] mt-[20px]'>Ecommerce Hub </p>
+                    </div>
+                    <div className='box_shadow rounded-[10px] mb-[30px] p-[30px] cursor-pointer'>
+                        <img className='rounded-[10px]' src={ssa} alt='Ecommerce' />
+                        <p className='text-[25px] font-[700] mt-[20px]'>SSA Vehicle Trackinng System</p>
+                    </div>
+                    <div className='box_shadow rounded-[10px] mb-[30px] p-[30px] cursor-pointer'>
+                        <img className='rounded-[10px]' src={Pinterest} alt='Ecommerce' />
+                        <p className='text-[25px] font-[700] mt-[20px]'>Pinterest UI Web App</p>
+                    </div>
+                    <div className='box_shadow rounded-[10px] mb-[30px] p-[30px] cursor-pointer'>
+                        <img className='rounded-[10px]' src={Tesla} alt='Ecommerce' />
+                        <p className='text-[25px] font-[700] mt-[20px]'>Tesla UI Web App</p>
+                    </div>
+                </div>
             </div>
+            <Transition
+                show={showModal}
+                enter="transition-opacity duration-300"
+                enterFrom="opacity-0"
+                enterTo="opacity-100"
+                leave="transition-opacity duration-300"
+                leaveFrom="opacity-100"
+                leaveTo="opacity-0"
+            >
+                <div className="relative z-10 h-[100%] overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+                    <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity h-[100%]"></div>
+                    <div className="fixed inset-0 z-10 overflow-y-auto h-[100%] ">
+                        <div className="flex justify-center p-4 text-center items-center sm:p-0 h-[100%] " >
+                            <div className="p-[40px] h-[80%] pt-[30px] w-[80%] relative transform overflow-y-auto rounded-lg bg-white text-left shadow-xl transition-all box_shadow">
+                                <CgClose className='close_model ml-[auto] mr-[0]  cursor-pointer' onClick={() => setShowModal(false)} />
+                                <div className=' mt-[10px] grid grid-cols-1 md:grid-cols-2'>
+                                    <img className='rounded-[10px] h-[450px] w-[550px] ' src={Ecomerce} alt='Ecommerce' />
+                                    <div className='ml-8 '>
+                                        <h1 className='text-[35px] font-[600] mb-[10px] mt-[20px] md:mt-[0px]'>Ecommerce Hub</h1>
+                                        <p className='text-[18px] font-[400] mb-[10px]'>• This is Ecommerce project wehre we implemented full fledge ecommerce functionalities.We made this Project in MERN Stack.Below I described some functionalites of this  project.
+                                        </p>
+                                        <p className='text-[18px] font-[400] mb-[20px]'>• User authentication like Login and Signup.And into this project it has two views for the users and for the admin. Admin can add the products and see the statistics. User can buy the product with place the order at the given address. Also has payment integration with PayPal or credit card.</p>
+                                        <p className='text-[18px] font-[400]'><span className='text-[18px] font-[600]'>Tech :</span> React.js, Node.js, Express.js, mongo Db</p>
+
+                                        <div className='grid grid-cols-2 mt-[30px]'>
+                                            <div className='box_shadow w-[200px] text-[#fd7014] flex items-center cursor-pointer'><RiLink className='mr-[10px]' color='black' /> Live Demo</div>
+                                            <div className='box_shadow w-[200px] text-[#fd7014] flex items-center cursor-pointer'><SiGithub className='mr-[10px]' color='black' />Github Code </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Transition>
         </div>
     )
 }

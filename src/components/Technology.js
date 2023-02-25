@@ -4,11 +4,11 @@ import webHosting from '../assests/web-hosting.png'
 
 const Technology = () => {
     return (
-        <div name='technology' className='h-[80vh] flex flex-col items-center '>
-            <div className='md:w-[90%] lg:w-[70%] flex flex-col items-center'>
-                <h1 className='text-5xl font-bold mb-5'>Technology</h1>
+        <div name='technology' className='h-[100%] flex flex-col items-center mb-[300px] '>
+            <div className='md:w-[90%] lg:w-[80%] flex flex-col items-center'>
+                <h1 className='text-5xl font-bold mb-5 mt-[120px]'>Technology</h1>
                 <div className='flex flex-col'>
-                    <div className='flex m-5'>
+                    <div className=' mt-[70px] grid grid-cols-2 gap-2 gap-y-14 kd:grid-cols-3 lg:grid-cols-5'>
                         <div className='flex items-center box_shadow'>
                             <SiJavascript color='#FFD600' style={{background:'black'}} />
                             <p>JavaScript</p>
@@ -29,8 +29,6 @@ const Technology = () => {
                             <SiMysql color='#F29111' style={{background:'white'}}/>
                             <p>SQL</p>
                         </div>
-                    </div>
-                    <div className='flex m-5'>
                         <div className='flex items-center box_shadow'>
                             <SiReact color='#61dafb' style={{background:'white'}}/>
                             <p>React Js</p>
@@ -51,8 +49,6 @@ const Technology = () => {
                             <SiRedux color='#764abc' style={{background:'white'}}/>
                             <p>Redux</p>
                         </div>
-                    </div>
-                    <div className='flex m-5'>
                         <div className='flex items-center box_shadow'>
                             <SiNodedotjs color='#43853d' style={{background:'white'}}/>
                             <p>Node js</p>
@@ -71,7 +67,7 @@ const Technology = () => {
                         </div>
                         <div className='flex items-center box_shadow'>
                             <img src={webHosting} alt='' style={{height:'1em',width:'1em'}}/>
-                            <p>Redux</p>
+                            <p>Web Hosting</p>
                         </div>
                     </div>
                 </div>
