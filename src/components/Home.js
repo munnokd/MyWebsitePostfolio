@@ -1,30 +1,30 @@
 import React from 'react'
-import Kalp from '../assests/kalp.jpg'
+import Kalp from '../assests/kd1.png'
 import AutoTyping, { BlinkCursor } from 'react-auto-typing'
 
 const Home = () => {
     return (
-        <div name='home' className='h-screen items-center flex justify-center'>
-            <div className='flex items-center flex-col md:flex-row justify-between md:w-[90%] lg:w-[70%]'>
-                <div className=' mb-11 md:mr-44'>
-                    <h1 className='text-5xl font-bold mb-5'>Hi I'm Kalp Prajapati</h1>
-                    <AutoTyping
+        <div name='home' className='h-[100%] lg:h-screen items-center flex justify-center '>
+            <div className='flex items-center flex-col lg:flex-row justify-between md:w-[90%] lg:w-[70%] mt-[180px] mb-[80px]'>
+                <div className='h-[200px] w-[700px] mb-11 lg:mr-44'>
+                    <h1 className='text-2xl lg:text-5xl font-bold mb-5'>Hello 👋 I'm <span className='text-[#fd7014]'>Kalp</span></h1>
+                    <span className='text-2xl font-[600] text-[#fd7014]'>a </span>  <AutoTyping
                         active // <boolean>
-                        textRef='Software Developer | Open Source Contributor | Engineer'
-                        writeSpeed={200}
-                        deleteSpeed={100} 
+                        textRef=' Software Developer | Open Source Contributor | Engineer'
+                        writeSpeed={1000}
+                        deleteSpeed={1000} 
                         delayToWrite={1000} 
-                        delayToDelete={3500} 
-                        className='text-xl'
+                        delayToDelete={5000} 
+                        className='text-lg lg:text-2xl font-[600] '
                     />
                     <BlinkCursor
                         active
-                        blinkSpeed={500}
-                        className='text-2xl'
+                        blinkSpeed={400}
+                        className='text-lg font-[600] lg:text-2xl'
                     />
                 </div>
-                <div>
-                    <img src={Kalp} alt='Kalp' width={300} height={300} />
+                <div className='relative box_shadow w-[300px] h-[350px] mt-[100px]'>
+                    <img className='absolute w-[300px] h-[450px] -top-[100px] left-[0px]' src={Kalp} alt='Kalp'  />
                 </div>
             </div>
         </div>

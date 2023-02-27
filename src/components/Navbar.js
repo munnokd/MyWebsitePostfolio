@@ -21,7 +21,7 @@ export default function Navbar() {
     const handleClick = () => setNavBar(!navbar);
 
     return (
-        <div className="bg-gray-800 fixed w-[100%]">
+        <div className="bg-gray-800 fixed w-[100%] z-[100]">
             <div className="mx-auto max-w-7xl px-2 md:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
                 <div onClick={handleClick} className='md:hidden z-10'>

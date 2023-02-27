@@ -23,4 +23,21 @@
     background: #fd7014;
     color: #ffffff;
 }
+.project_img{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.project_img img{
+    max-width: 100%;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+.project_img:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border-radius: 10px;
+}
 @tailwind utilities;
