@@ -10,8 +10,9 @@ import Technology from "./components/Technology";
 
 function App() {
   return (
-    <>
+    <div className='main_body'>
       <Navbar/>
+      <div className='w-[100%]'>
       <Home/>
       <AboutMe/>
       <Technology/>
@@ -19,8 +20,9 @@ function App() {
       <Projects/>
       <Contacts/>
       <div className='border-b-2 my-[40px]' ></div>
+      </div>
       <BottomBar/>
-    </>
+    </div>
 
   );
 }

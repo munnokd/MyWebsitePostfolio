@@ -3,14 +3,6 @@ import { Link } from "react-scroll";
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-const navigation = [
-    { name: 'Home', href: 'home', current: true },
-    { name: 'About', href: 'about', current: false },
-    { name: 'Technology', href: 'technology', current: false },
-    { name: 'Experience', href: 'experience', current: false },
-    { name: 'Projects', href: 'projects', current: false },
-    { name: 'Contact', href: 'contact', current: false },
-]
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -19,6 +11,14 @@ function classNames(...classes) {
 export default function Navbar() {
     const [navbar, setNavBar] = useState(false)
     const handleClick = () => setNavBar(!navbar);
+    const navigation = [
+        { name: 'Home', href: 'home', current: false },
+        { name: 'About', href: 'about', current: false },
+        { name: 'Technology', href: 'technology', current: false },
+        { name: 'Experience', href: 'experience', current: false },
+        { name: 'Projects', href: 'projects', current: false },
+        { name: 'Contact', href: 'contact', current: false },
+    ]
 
     return (
         <div className="bg-gray-800 fixed w-[100%] z-[100]">
@@ -43,10 +43,11 @@ export default function Navbar() {
                                     <Link
                                         to={item.href}
                                         className={classNames(
-                                            item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                            item.current ? 'bg-gray-900 text-white' : 'text-white hover:bg-gray-700 hover:text-white',
                                             'px-3 py-2 rounded-md text-sm font-medium cursor-pointer'
                                         )}
                                         smooth={true} duration={400}
+                                        aria-current={item.current ? 'page' : undefined}
                                     >
                                         {item.name}
                                     </Link>
