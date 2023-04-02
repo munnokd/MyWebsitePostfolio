@@ -7,21 +7,24 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Technology from "./components/Technology";
+import SnackbarProvider from 'react-simple-snackbar'
 
 function App() {
   return (
     <div className='main_body'>
-      <Navbar/>
+      <Navbar />
       <div className='w-[100%]'>
-      <Home/>
-      <AboutMe/>
-      <Technology/>
-      <Experience/>
-      <Projects/>
-      <Contacts/>
-      <div className='border-b-2 my-[40px]' ></div>
+        <Home />
+        <AboutMe />
+        <Technology />
+        <Experience />
+        <Projects />
+        <SnackbarProvider>
+          <Contacts />
+        </SnackbarProvider>
+        <div className='border-b-2 my-[40px]' ></div>
       </div>
-      <BottomBar/>
+      <BottomBar />
     </div>
 
   );

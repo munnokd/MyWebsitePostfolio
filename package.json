@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@headlessui/react": "^1.7.12",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -15,6 +16,7 @@
     "react-reveal": "^1.2.2",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
+    "react-simple-snackbar": "^1.1.11",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
