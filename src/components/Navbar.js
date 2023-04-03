@@ -55,7 +55,7 @@ export default function Navbar() {
                             </div>
                         </div>
                         <div>
-                            <a href='https://drive.google.com/file/d/1bRddbH2-LNrxGIICIfB4TxqyNgd3q_Bf/view?usp=share_link' target='_blank' rel="noreferrer" className='bg-white text-black px-3 py-2 ml-4 rounded-sm hover:cursor-pointer' >Resume</a>
+                            <a href='https://drive.google.com/file/d/1I-gnZKiJ4xvJxmMwDDE3IA0f6vnIfdNG/view?usp=share_link' target='_blank' rel="noreferrer" className='bg-white text-black px-3 py-2 ml-4 rounded-sm hover:cursor-pointer' >Resume</a>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,8 @@
 import React from 'react'
-import { SiJavascript,SiHtml5,SiCss3,SiJava,SiMysql,SiReact,SiBootstrap,SiTailwindcss,SiGithub,SiRedux,SiNodedotjs,SiExpress,SiMongodb,SiPostman } from 'react-icons/si'
+import { SiJavascript,SiHtml5,SiCss3,SiJava,SiMysql,SiReact,SiBootstrap,SiTailwindcss,SiGithub,SiRedux,SiNodedotjs,SiExpress,SiMongodb,SiPostman, SiSequelize, SiDocker } from 'react-icons/si'
 import webHosting from '../assests/web-hosting.png'
+import rest from '../assests/rest.png'
+import mui from '../assests/mui.png'
 
 const Technology = () => {
     return (
@@ -64,6 +66,22 @@ const Technology = () => {
                         <div className='flex items-center box_shadow'>
                             <SiPostman color='#E44D26' style={{background:'white'}}/>
                             <p>Postman</p>
+                        </div>
+                        <div className='flex items-center box_shadow'>
+                            <SiSequelize color='#3b76c3' style={{background:'white'}}/>
+                            <p>Sequelize</p>
+                        </div>
+                        <div className='flex items-center box_shadow'>
+                            <SiDocker color='#3b76c3' style={{background:'white'}}/>
+                            <p>Docker</p>
+                        </div>
+                        <div className='flex items-center box_shadow'>
+                            <img src={mui} alt='' style={{height:'1em',width:'1em'}}/>
+                            <p>MUI</p>
+                        </div>
+                        <div className='flex items-center box_shadow'>
+                            <img src={rest} alt='' style={{height:'1em',width:'1em'}}/>
+                            <p>Rest API</p>
                         </div>
                         <div className='flex items-center box_shadow'>
                             <img src={webHosting} alt='' style={{height:'1em',width:'1em'}}/>

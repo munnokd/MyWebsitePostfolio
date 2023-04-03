@@ -6,7 +6,7 @@ import Linkdin from '../assests/linkdin.png'
 
 const BottomBar = () => {
     return (
-        <div className='mb-[40px] flex flex-col items-center justify-between px-[250px] lg:flex-row'>
+        <div className='mb-[40px] w-[100%] flex flex-col items-center justify-between lg:px-[250px] lg:flex-row'>
             <div>
                 <h1> All rights reserved © Kalp Prajapati | {new Date().getFullYear()}</h1>
             </div>

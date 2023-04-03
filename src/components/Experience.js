@@ -19,6 +19,11 @@ const Experience = () => {
                             made on vehicle tracking system in react.js ,MUI, Docker,
                             MariaDb, node js, express js, API.</p>
                     </div>
+                    <div className='mb-[30px] text-[30px] font-bold'>Volunteer Experience</div>
+                    <div className='box_shadow rounded-[10px] mb-[30px] p-[30px]'>
+                        <h1 className='text-[25px] font-bold mb-[10px]'>Open Source Contributor </h1>
+                        <p className='text-[16px]'>Currently doing opensource contributions. I contributed in many opensource projects either documentation or code based solution. You can able to see it by vising my github profile.</p>
+                    </div>
                     <div className='mb-[30px] text-[30px] font-bold'>Education Qualification</div>
                     <div className='box_shadow rounded-[10px] mb-[30px] p-[30px]'>
                         <h1 className='text-[25px] font-bold mb-[10px]'>B.Tech- Computer Science and Engineering</h1>

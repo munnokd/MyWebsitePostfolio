@@ -13,6 +13,8 @@ const Projects = () => {
     const [showSSA, setShowSSA] = useState(false);
     const [showPinterest, setShowPinterest] = useState(false);
     const [showTesla, setShowTesla] = useState(false);
+    const [showProjest, setShowProjest] = useState(false);
+    const [showResumeBuilder, setShowResumeBuilder] = useState(false);
 
     return (
         <div name='projects' className='h-[100%] flex flex-col items-center mb-[100px]'>
@@ -42,6 +44,18 @@ const Projects = () => {
                             <img className='rounded-[10px] ' src={Tesla} alt='Ecommerce' />
                         </div>
                         <p className='text-[25px] font-[700] mt-[20px]'>Tesla UI Web App</p>
+                    </div>
+                    <div className='box_shadow rounded-[10px] mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowTesla(true)}>
+                        <div className='project_img'>
+                            <img className='rounded-[10px] ' src={Tesla} alt='Ecommerce' />
+                        </div>
+                        <p className='text-[25px] font-[700] mt-[20px]'>Projest</p>
+                    </div>
+                    <div className='box_shadow rounded-[10px] mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowTesla(true)}>
+                        <div className='project_img'>
+                            <img className='rounded-[10px] ' src={Tesla} alt='Ecommerce' />
+                        </div>
+                        <p className='text-[25px] font-[700] mt-[20px]'>Resume Generator</p>
                     </div>
                 </div>
             </div>
@@ -146,6 +160,74 @@ const Projects = () => {
             </Transition>
             <Transition
                 show={showTesla}
+                enter="transition-opacity duration-300"
+                enterFrom="opacity-0"
+                enterTo="opacity-100"
+                leave="transition-opacity duration-300"
+                leaveFrom="opacity-100"
+                leaveTo="opacity-0"
+            >
+                <div className="relative z-10 h-[100%] overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+                    <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity h-[100%]"></div>
+                    <div className="fixed inset-0 z-10 overflow-y-auto h-[100%] ">
+                        <div className="flex justify-center p-4 text-center items-center sm:p-0 h-[100%] " >
+                            <div className="p-[40px] h-[80%] pt-[30px] w-[80%] relative transform overflow-y-auto rounded-lg bg-white text-left shadow-xl transition-all box_shadow">
+                                <CgClose className='close_model ml-[auto] mr-[0]  cursor-pointer' onClick={() => setShowTesla(false)} />
+                                <div className=' mt-[10px] grid grid-cols-1 md:grid-cols-2'>
+                                    <img className='rounded-[10px] h-[450px] w-[550px] ' src={Tesla} alt='Ecommerce' />
+                                    <div className='ml-8 '>
+                                        <h1 className='text-[35px] font-[600] mb-[10px] mt-[20px] md:mt-[0px]'>Ecommerce Hub</h1>
+                                        <p className='text-[18px] font-[400] mb-[10px]'>• Tesla Responsive Ui Clone in React.js. In this project I am using react reveal for animation. I made fully responsive design using react js and css. 
+                                        </p>
+                                        <p className='text-[18px] font-[400]'><span className='text-[18px] font-[600]'>Tech :</span> React.js, Html, Javascript, Css, React Reveal</p>
+
+                                        <div className='grid grid-cols-2 mt-[30px]'>
+                                            <a className='box_shadow w-[200px] text-[#fd7014] flex items-center cursor-pointer' href='https://tesla-clone-b0e1e.web.app/' alt="" target='_blank' rel="noreferrer"><RiLink className='mr-[10px]' color='black' />Live</a>
+                                            <a className='box_shadow w-[200px] text-[#fd7014] flex items-center cursor-pointer' href='https://github.com/munnokd/Tesla-UI' alt="" target='_blank' rel="noreferrer"><SiGithub className='mr-[10px]' color='black' />Github </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Transition>
+            <Transition
+                show={showProjest}
+                enter="transition-opacity duration-300"
+                enterFrom="opacity-0"
+                enterTo="opacity-100"
+                leave="transition-opacity duration-300"
+                leaveFrom="opacity-100"
+                leaveTo="opacity-0"
+            >
+                <div className="relative z-10 h-[100%] overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+                    <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity h-[100%]"></div>
+                    <div className="fixed inset-0 z-10 overflow-y-auto h-[100%] ">
+                        <div className="flex justify-center p-4 text-center items-center sm:p-0 h-[100%] " >
+                            <div className="p-[40px] h-[80%] pt-[30px] w-[80%] relative transform overflow-y-auto rounded-lg bg-white text-left shadow-xl transition-all box_shadow">
+                                <CgClose className='close_model ml-[auto] mr-[0]  cursor-pointer' onClick={() => setShowTesla(false)} />
+                                <div className=' mt-[10px] grid grid-cols-1 md:grid-cols-2'>
+                                    <img className='rounded-[10px] h-[450px] w-[550px] ' src={Tesla} alt='Ecommerce' />
+                                    <div className='ml-8 '>
+                                        <h1 className='text-[35px] font-[600] mb-[10px] mt-[20px] md:mt-[0px]'>Ecommerce Hub</h1>
+                                        <p className='text-[18px] font-[400] mb-[10px]'>• Tesla Responsive Ui Clone in React.js. In this project I am using react reveal for animation. I made fully responsive design using react js and css. 
+                                        </p>
+                                        <p className='text-[18px] font-[400]'><span className='text-[18px] font-[600]'>Tech :</span> React.js, Html, Javascript, Css, React Reveal</p>
+
+                                        <div className='grid grid-cols-2 mt-[30px]'>
+                                            <a className='box_shadow w-[200px] text-[#fd7014] flex items-center cursor-pointer' href='https://tesla-clone-b0e1e.web.app/' alt="" target='_blank' rel="noreferrer"><RiLink className='mr-[10px]' color='black' />Live</a>
+                                            <a className='box_shadow w-[200px] text-[#fd7014] flex items-center cursor-pointer' href='https://github.com/munnokd/Tesla-UI' alt="" target='_blank' rel="noreferrer"><SiGithub className='mr-[10px]' color='black' />Github </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Transition>
+            <Transition
+                show={showResumeBuilder}
                 enter="transition-opacity duration-300"
                 enterFrom="opacity-0"
                 enterTo="opacity-100"
