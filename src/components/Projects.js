@@ -3,6 +3,8 @@ import Ecomerce from '../assests/ecom.png'
 import Pinterest from '../assests/pint.png'
 import ssa from '../assests/ssa.png'
 import Tesla from '../assests/tesla.png'
+import projest from '../assests/projest.png'
+import resume from '../assests/resume.png'
 import { CgClose } from 'react-icons/cg'
 import { SiGithub } from 'react-icons/si'
 import { RiLink } from 'react-icons/ri'
@@ -19,8 +21,8 @@ const Projects = () => {
     return (
         <div name='projects' className='h-[100%] flex flex-col items-center mb-[100px]'>
             <div className='md:w-[90%] lg:w-[70%] flex flex-col items-center'>
-                <h1 className='text-5xl font-bold mb-[55px] mt-[80px]'>Projects</h1>
-                <div className='grid grid-cols-1 gap-y-5 md:grid-cols-2'>
+                <h1 className='text-5xl font-bold mb-[55px] mt-[120px]'>Projects</h1>
+                <div className='mt-[40px] grid grid-cols-1 gap-y-5 md:grid-cols-2'>
                     <div className='box_shadow rounded-[10px] mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowEcommerce(true)}>
                         <div className='project_img'>
                             <img className='rounded-[10px] ' src={Ecomerce} alt='Ecommerce' />
@@ -45,15 +47,15 @@ const Projects = () => {
                         </div>
                         <p className='text-[25px] font-[700] mt-[20px]'>Tesla UI Web App</p>
                     </div>
-                    <div className='box_shadow rounded-[10px] mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowTesla(true)}>
+                    <div className='box_shadow rounded-[10px] mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowProjest(true)}>
                         <div className='project_img'>
-                            <img className='rounded-[10px] ' src={Tesla} alt='Ecommerce' />
+                            <img className='rounded-[10px] ' src={projest} alt='Projest' />
                         </div>
                         <p className='text-[25px] font-[700] mt-[20px]'>Projest</p>
                     </div>
-                    <div className='box_shadow rounded-[10px] mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowTesla(true)}>
+                    <div className='box_shadow rounded-[10px] mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowResumeBuilder(true)}>
                         <div className='project_img'>
-                            <img className='rounded-[10px] ' src={Tesla} alt='Ecommerce' />
+                            <img className='rounded-[10px] ' src={resume} alt='resume' />
                         </div>
                         <p className='text-[25px] font-[700] mt-[20px]'>Resume Generator</p>
                     </div>
@@ -78,7 +80,7 @@ const Projects = () => {
                                     <img className='rounded-[10px] h-[450px] w-[550px] ' src={Ecomerce} alt='Ecommerce' />
                                     <div className='ml-8 '>
                                         <h1 className='text-[35px] font-[600] mb-[10px] mt-[20px] md:mt-[0px]'>Ecommerce Hub</h1>
-                                        <p className='text-[18px] font-[400] mb-[10px]'>• This is Ecommerce project wehre we implemented full fledge ecommerce functionalities.We made this Project in MERN Stack.Below I described some functionalites of this  project.
+                                        <p className='text-[18px] font-[400] mb-[10px]'>• This is Ecommerce project where we implemented full fledge Ecommerce functionalities.We made this Project in MERN Stack.Below I described some functionalities of this  project.
                                         </p>
                                         <p className='text-[18px] font-[400] mb-[20px]'>• User authentication like Login and Signup.And into this project it has two views for the users and for the admin. Admin can add the products and see the statistics. User can buy the product with place the order at the given address. Also has payment integration with PayPal or credit card.</p>
                                         <p className='text-[18px] font-[400]'><span className='text-[18px] font-[600]'>Tech :</span> React.js, Node.js, Express.js, mongo Db</p>
@@ -111,12 +113,11 @@ const Projects = () => {
                                 <div className=' mt-[10px] grid grid-cols-1 md:grid-cols-2'>
                                     <img className='rounded-[10px] h-[450px] w-[550px] ' src={ssa} alt='Ecommerce' />
                                     <div className='ml-8 '>
-                                        <h1 className='text-[35px] font-[600] mb-[10px] mt-[20px] md:mt-[0px]'>SSA Vehicle Trackinng System</h1>
-                                        <p className='text-[18px] font-[400] mb-[10px]'>• This is Vehicle Tracking system project of goverment of gujarat.We made this Project in full stack.Below I described some functionalites of this  project.
+                                        <h1 className='text-[35px] font-[600] mb-[10px] mt-[20px] md:mt-[0px]'>SSA Vehicle Tracking System</h1>
+                                        <p className='text-[18px] font-[400] mb-[10px]'>• This is Vehicle Tracking system project of government of gujarat.We made this Project in full stack.Below I described some functionalities of this  project.
                                         </p>
-                                        <p className='text-[18px] font-[400] mb-[20px]'>• This project is basically using for take attendance of students in vehicle by driver. In this project we also able to track the driver's car location.In this project school principle is able to assign students to the perticular driver.</p>
-                                        <p className='text-[18px] font-[400]'><span className='text-[18px] font-[600]'>Tech :</span> React.js, Node.js, Express.js, Maria DB, Docker, MUI, Minio, Track Car API, Socket.IO</p>
-
+                                        <p className='text-[18px] font-[400] mb-[20px]'>• This project is basically using for take attendance of students in vehicle by driver. In this project we also able to track the driver's car location.In this project school principle is able to assign students to the particular driver.</p>
+                                        <p className='text-[18px] font-[400]'><span className='text-[18px] font-[600]'>Tech :</span> React.js, Node.js, Redux, Express.js, Maria DB, Docker, MUI, Track Car API, Socket.IO, Linux</p>
                                     </div>
                                 </div>
                             </div>
@@ -142,8 +143,8 @@ const Projects = () => {
                                 <div className=' mt-[10px] grid grid-cols-1 md:grid-cols-2'>
                                     <img className='rounded-[10px] h-[450px] w-[550px] ' src={Pinterest} alt='Ecommerce' />
                                     <div className='ml-8 '>
-                                        <h1 className='text-[35px] font-[600] mb-[10px] mt-[20px] md:mt-[0px]'>Pinterst UI Web APP</h1>
-                                        <p className='text-[18px] font-[400] mb-[10px]'>• I made pinterest Clone UI in frontend. n this project I am using API calling for photos fetching. I made great design for frontend ites same like real pinterest App. 
+                                        <h1 className='text-[35px] font-[600] mb-[10px] mt-[20px] md:mt-[0px]'>Pinterest UI Web APP</h1>
+                                        <p className='text-[18px] font-[400] mb-[10px]'>• I made Pinterest Clone UI in frontend. n this project I am using API calling for photos fetching. I made great design for frontend it's same like real Pinterest App. 
                                         </p>
                                         <p className='text-[18px] font-[400]'><span className='text-[18px] font-[600]'>Tech :</span> React.js, Html, Css, Javascript, REST API</p>
 
@@ -206,18 +207,18 @@ const Projects = () => {
                     <div className="fixed inset-0 z-10 overflow-y-auto h-[100%] ">
                         <div className="flex justify-center p-4 text-center items-center sm:p-0 h-[100%] " >
                             <div className="p-[40px] h-[80%] pt-[30px] w-[80%] relative transform overflow-y-auto rounded-lg bg-white text-left shadow-xl transition-all box_shadow">
-                                <CgClose className='close_model ml-[auto] mr-[0]  cursor-pointer' onClick={() => setShowTesla(false)} />
+                                <CgClose className='close_model ml-[auto] mr-[0]  cursor-pointer' onClick={() => setShowProjest(false)} />
                                 <div className=' mt-[10px] grid grid-cols-1 md:grid-cols-2'>
-                                    <img className='rounded-[10px] h-[450px] w-[550px] ' src={Tesla} alt='Ecommerce' />
+                                    <img className='rounded-[10px] h-[450px] w-[550px] ' src={projest} alt='Projest' />
                                     <div className='ml-8 '>
-                                        <h1 className='text-[35px] font-[600] mb-[10px] mt-[20px] md:mt-[0px]'>Ecommerce Hub</h1>
-                                        <p className='text-[18px] font-[400] mb-[10px]'>• Tesla Responsive Ui Clone in React.js. In this project I am using react reveal for animation. I made fully responsive design using react js and css. 
+                                        <h1 className='text-[35px] font-[600] mb-[10px] mt-[20px] md:mt-[0px]'>Projest</h1>
+                                        <p className='text-[18px] font-[400] mb-[10px]'>• Projest is a powerful platform that empowers users to showcase their work, connect with others in their field, and advance their careers. To make it easy for users to navigate and find what they are looking for, Projest offers a wide range of features. This is Open Source project. They made this project using vanilla.js but after that I request them to implement this project in react.js so they will assign this project to me and one another developer. That assigned team member made only design and after that I implement all the functionalities and firebase database with it. 
                                         </p>
-                                        <p className='text-[18px] font-[400]'><span className='text-[18px] font-[600]'>Tech :</span> React.js, Html, Javascript, Css, React Reveal</p>
+                                        <p className='text-[18px] font-[400]'><span className='text-[18px] font-[600]'>Tech :</span> React.js, Html, Javascript, Css, Firebase, Tailwind.css</p>
 
                                         <div className='grid grid-cols-2 mt-[30px]'>
-                                            <a className='box_shadow w-[200px] text-[#fd7014] flex items-center cursor-pointer' href='https://tesla-clone-b0e1e.web.app/' alt="" target='_blank' rel="noreferrer"><RiLink className='mr-[10px]' color='black' />Live</a>
-                                            <a className='box_shadow w-[200px] text-[#fd7014] flex items-center cursor-pointer' href='https://github.com/munnokd/Tesla-UI' alt="" target='_blank' rel="noreferrer"><SiGithub className='mr-[10px]' color='black' />Github </a>
+                                            <a className='box_shadow w-[200px] text-[#fd7014] flex items-center cursor-pointer' href='https://projest-290c8.web.app/' alt="" target='_blank' rel="noreferrer"><RiLink className='mr-[10px]' color='black' />Live</a>
+                                            <a className='box_shadow w-[200px] text-[#fd7014] flex items-center cursor-pointer' href='https://github.com/munnokd/Projest' alt="" target='_blank' rel="noreferrer"><SiGithub className='mr-[10px]' color='black' />Github </a>
                                         </div>
                                     </div>
                                 </div>
@@ -240,18 +241,17 @@ const Projects = () => {
                     <div className="fixed inset-0 z-10 overflow-y-auto h-[100%] ">
                         <div className="flex justify-center p-4 text-center items-center sm:p-0 h-[100%] " >
                             <div className="p-[40px] h-[80%] pt-[30px] w-[80%] relative transform overflow-y-auto rounded-lg bg-white text-left shadow-xl transition-all box_shadow">
-                                <CgClose className='close_model ml-[auto] mr-[0]  cursor-pointer' onClick={() => setShowTesla(false)} />
+                                <CgClose className='close_model ml-[auto] mr-[0]  cursor-pointer' onClick={() => setShowResumeBuilder(false)} />
                                 <div className=' mt-[10px] grid grid-cols-1 md:grid-cols-2'>
-                                    <img className='rounded-[10px] h-[450px] w-[550px] ' src={Tesla} alt='Ecommerce' />
+                                    <img className='rounded-[10px] h-[450px] w-[550px] ' src={resume} alt='resume' />
                                     <div className='ml-8 '>
-                                        <h1 className='text-[35px] font-[600] mb-[10px] mt-[20px] md:mt-[0px]'>Ecommerce Hub</h1>
-                                        <p className='text-[18px] font-[400] mb-[10px]'>• Tesla Responsive Ui Clone in React.js. In this project I am using react reveal for animation. I made fully responsive design using react js and css. 
-                                        </p>
-                                        <p className='text-[18px] font-[400]'><span className='text-[18px] font-[600]'>Tech :</span> React.js, Html, Javascript, Css, React Reveal</p>
+                                        <h1 className='text-[35px] font-[600] mb-[10px] mt-[20px] md:mt-[0px]'>Resume Generator</h1>
+                                        <p className='text-[18px] font-[400] mb-[10px]'>• This project is open source project, it can help you to generate your own Resume Which can help you represent yourself at Companies. It automatically converts your details into a attractive Resume Template. I give my contribution in design part into this project. I solved their one issue for that I made good design of contact us page.</p>
+                                        <p className='text-[18px] font-[400]'><span className='text-[18px] font-[600]'>Tech :</span> React.js, Html, Javascript, Css</p>
 
                                         <div className='grid grid-cols-2 mt-[30px]'>
-                                            <a className='box_shadow w-[200px] text-[#fd7014] flex items-center cursor-pointer' href='https://tesla-clone-b0e1e.web.app/' alt="" target='_blank' rel="noreferrer"><RiLink className='mr-[10px]' color='black' />Live</a>
-                                            <a className='box_shadow w-[200px] text-[#fd7014] flex items-center cursor-pointer' href='https://github.com/munnokd/Tesla-UI' alt="" target='_blank' rel="noreferrer"><SiGithub className='mr-[10px]' color='black' />Github </a>
+                                            <a className='box_shadow w-[200px] text-[#fd7014] flex items-center cursor-pointer' href='https://resume-genrator.vercel.app/' alt="" target='_blank' rel="noreferrer"><RiLink className='mr-[10px]' color='black' />Live</a>
+                                            <a className='box_shadow w-[200px] text-[#fd7014] flex items-center cursor-pointer' href='https://github.com/munnokd/Resume-Genrator' alt="" target='_blank' rel="noreferrer"><SiGithub className='mr-[10px]' color='black' />Github </a>
                                         </div>
                                     </div>
                                 </div>

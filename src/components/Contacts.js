@@ -68,7 +68,7 @@ const Contacts = () => {
         <div name='contact' className='h-[100%] flex flex-col items-center  mx-[20px]'>
             <div className='w-[100%] flex flex-col items-center'>
 
-                <h1 className='text-5xl font-bold mb-[55px] mt-[80px]'>Contact With Me</h1>
+                <h1 className='text-5xl font-bold mb-[55px] mt-[120px]'>Contact With Me</h1>
                 <form className="flex flex-col w-[100%] md:w-[70%] lg:w-[50%] justify-center items-center" ref={form} onSubmit={sendEmail}>
                     <input type="text" name="from_name" class="block w-[100%] text-sm text-gray-900 bg-transparent border-2 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#fd7014] peer px-3 py-3 rounded-sm my-4" onChange={(e) => setName(e.target.value)} value={name} placeholder="Enter Your Name" required />
                     <input type="text" name="from_email" class="block w-[100%] text-sm text-gray-900 bg-transparent border-2 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-[#fd7014] peer px-3 py-3 rounded-sm my-4" onChange={(e) => setEmail(e.target.value)} value={email} placeholder="Enter Your Email" required />

@@ -3,10 +3,11 @@ import { SiJavascript,SiHtml5,SiCss3,SiJava,SiMysql,SiReact,SiBootstrap,SiTailwi
 import webHosting from '../assests/web-hosting.png'
 import rest from '../assests/rest.png'
 import mui from '../assests/mui.png'
+import fire from '../assests/firebase.png'
 
 const Technology = () => {
     return (
-        <div name='technology' className='h-[100%] flex flex-col items-center mb-[300px] '>
+        <div name='technology' className='h-[100%] flex flex-col items-center mb-[80px] '>
             <div className='md:w-[90%] lg:w-[80%] flex flex-col items-center'>
                 <h1 className='text-5xl font-bold mb-5 mt-[120px]'>Technology</h1>
                 <div className='flex flex-col'>
@@ -74,6 +75,10 @@ const Technology = () => {
                         <div className='flex items-center box_shadow'>
                             <SiDocker color='#3b76c3' style={{background:'white'}}/>
                             <p>Docker</p>
+                        </div>
+                        <div className='flex items-center box_shadow'>
+                            <img src={fire} alt='' style={{height:'1em',width:'1em'}}/>
+                            <p>Firebase</p>
                         </div>
                         <div className='flex items-center box_shadow'>
                             <img src={mui} alt='' style={{height:'1em',width:'1em'}}/>
