@@ -5,7 +5,8 @@ const Experience = () => {
         <div name='experience' className='h-[100%] flex flex-col items-center mb-[100px]'>
             <div className='md:w-[90%] lg:w-[70%] flex flex-col items-center'>
                 <h1 className='text-5xl font-bold mb-5 mt-[120px]'>Experience</h1>
-                <div className='mt-[50px] grid grid-cols-1'>
+                <hr style={{ borderTop: '3px solid #fd7014', width: '170px' ,marginBottom:'50px'}} />
+                <div className='mt-[10px] grid grid-cols-1'>
                     <div className='mb-[30px] text-[30px] font-bold'>Job Experience</div>
                     <div className='box_shadow rounded-[10px] mb-[50px] p-[30px]'>
                         <h1 className='text-[25px] font-bold mb-[10px]'>Software Developer</h1>

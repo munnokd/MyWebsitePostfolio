@@ -2,10 +2,25 @@
 @tailwind components;
 .main_body{
     width: 100% !important;
+    /* background-image: url('./assests/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(1000px); */
+}
+
+.bg_image{
+    background-image: url('./assests/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(1000px);
 }
 .box_shadow{
-    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
-    background:linear-gradient(145deg, #e2e8ec, #ffffff);
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 10px;
     margin: 0px 20px;
 }

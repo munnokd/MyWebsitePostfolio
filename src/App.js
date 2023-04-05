@@ -13,7 +13,7 @@ function App() {
   return (
     <div className='main_body'>
       <Navbar />
-      <div className='w-[100%]'>
+      <div className='w-[100%] bg_image'>
         <Home />
         <AboutMe />
         <Technology />
@@ -22,9 +22,9 @@ function App() {
         <SnackbarProvider>
           <Contacts />
         </SnackbarProvider>
-        <div className='border-b-2 my-[40px]' ></div>
+        <div className='border-b-2 my-[40px] ' ></div>
+        <BottomBar />
       </div>
-      <BottomBar />
     </div>
 
   );

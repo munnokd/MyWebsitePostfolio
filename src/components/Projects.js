@@ -21,8 +21,9 @@ const Projects = () => {
     return (
         <div name='projects' className='h-[100%] flex flex-col items-center mb-[100px]'>
             <div className='md:w-[90%] lg:w-[70%] flex flex-col items-center'>
-                <h1 className='text-5xl font-bold mb-[55px] mt-[120px]'>Projects</h1>
-                <div className='mt-[40px] grid grid-cols-1 gap-y-5 md:grid-cols-2'>
+                <h1 className='text-5xl font-bold mb-5 mt-[120px]'>Projects</h1>
+                <hr style={{ borderTop: '3px solid #fd7014', width: '140px' ,marginBottom:'50px'}} />
+                <div className='mt-[10px] grid grid-cols-1 gap-y-5 md:grid-cols-2'>
                     <div className='box_shadow rounded-[10px] mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowEcommerce(true)}>
                         <div className='project_img'>
                             <img className='rounded-[10px] ' src={Ecomerce} alt='Ecommerce' />

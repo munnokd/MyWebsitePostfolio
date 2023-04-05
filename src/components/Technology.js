@@ -9,9 +9,10 @@ const Technology = () => {
     return (
         <div name='technology' className='h-[100%] flex flex-col items-center mb-[80px] '>
             <div className='md:w-[90%] lg:w-[80%] flex flex-col items-center'>
-                <h1 className='text-5xl font-bold mb-5 mt-[120px]'>Technology</h1>
+                <h1 className='text-5xl font-bold mb-4 mt-[120px]'>Technology</h1>
+                <hr style={{ borderTop: '3px solid #fd7014', width: '180px' ,marginBottom:'50px'}} />
                 <div className='flex flex-col'>
-                    <div className=' mt-[70px] grid grid-cols-2 gap-2 gap-y-14 kd:grid-cols-3 lg:grid-cols-5'>
+                    <div className=' mt-[10px] grid grid-cols-2 gap-2 gap-y-14 kd:grid-cols-3 lg:grid-cols-5'>
                         <div className='flex items-center box_shadow'>
                             <SiJavascript color='#FFD600' style={{background:'black'}} />
                             <p>JavaScript</p>
