@@ -68,9 +68,9 @@ const Contacts = () => {
         <div name='contact' className='h-[100%] flex flex-col items-center  mx-[20px]'>
             <div className='w-[100%] flex flex-col items-center'>
 
-                <h1 className='text-5xl font-bold mb-3 mt-[120px]'>Contact With Me</h1>
-                <hr style={{ borderTop: '3px solid #fd7014', width: '300px' ,marginBottom:'50px'}} />
-                <form className="flex flex-col w-[100%] md:w-[70%] lg:w-[50%] justify-center items-center box_shadow px-10 py-10" ref={form} onSubmit={sendEmail}>
+                <h1 className='text-4xl sm:text-5xl font-bold mb-3 mt-[120px]'>Contact With Me</h1>
+                <hr className='border-t-[#fd7014] border-t-[3px] w-[230px] sm:w-[300px] mb-[50px]' />
+                <form className="flex flex-col w-[100%] mx-6 md:w-[70%] lg:w-[50%] justify-center items-center box_shadow px-10 py-10" ref={form} onSubmit={sendEmail}>
                     <input type="text" name="from_name" className=" block w-[100%] text-sm text-black bg-transparent border-2 border-b-2 border-[#fd7014] appearance-none placeholder-gray-800 focus:outline-none focus:ring-0 focus:border-[#fd7014] peer px-3 py-3 rounded-sm my-4" onChange={(e) => setName(e.target.value)} value={name} placeholder="Enter Your Name" required />
                     <input type="text" name="from_email" className="block w-[100%] text-sm text-black bg-transparent border-2 border-b-2 border-[#fd7014] appearance-none placeholder-gray-800 focus:outline-none focus:ring-0 focus:border-[#fd7014] peer px-3 py-3 rounded-sm my-4" onChange={(e) => setEmail(e.target.value)} value={email} placeholder="Enter Your Email" required />
                     <input type="text" name="subject" className="block w-[100%] text-sm text-black bg-transparent border-2 border-b-2 border-[#fd7014] appearance-none placeholder-gray-800 focus:outline-none focus:ring-0 focus:border-[#fd7014] peer px-3 py-3 rounded-sm my-4" onChange={(e) => setSubject(e.target.value)} value={subject} placeholder="Enter Subject" required />

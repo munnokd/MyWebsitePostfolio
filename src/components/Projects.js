@@ -21,40 +21,40 @@ const Projects = () => {
     return (
         <div name='projects' className='h-[100%] flex flex-col items-center mb-[100px]'>
             <div className='md:w-[90%] lg:w-[70%] flex flex-col items-center'>
-                <h1 className='text-5xl font-bold mb-5 mt-[120px]'>Projects</h1>
-                <hr style={{ borderTop: '3px solid #fd7014', width: '140px' ,marginBottom:'50px'}} />
+                <h1 className='text-4xl sm:text-5xl font-bold mb-5 mt-[120px]'>Projects</h1>
+                <hr className='border-t-[#fd7014] border-t-[3px] w-[110px] sm:w-[140px] mb-[50px]' />
                 <div className='mt-[10px] grid grid-cols-1 gap-y-5 md:grid-cols-2'>
-                    <div className='box_shadow rounded-[10px] mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowEcommerce(true)}>
+                    <div className='box_shadow rounded-[10px] mx-6 mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowEcommerce(true)}>
                         <div className='project_img'>
                             <img className='rounded-[10px] ' src={Ecomerce} alt='Ecommerce' />
                         </div>
                         <p className='text-[25px] font-[700] mt-[20px]'>Ecommerce Hub </p>
                     </div>
-                    <div className='box_shadow rounded-[10px] mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowSSA(true)}>
+                    <div className='box_shadow rounded-[10px] mx-6 mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowSSA(true)}>
                         <div className='project_img'>
                             <img className='rounded-[10px] ' src={ssa} alt='Ecommerce' />
                         </div>
                         <p className='text-[25px] font-[700] mt-[20px]'>SSA Vehicle Trackinng System</p>
                     </div>
-                    <div className='box_shadow rounded-[10px] mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowPinterest(true)}>
+                    <div className='box_shadow rounded-[10px] mx-6 mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowPinterest(true)}>
                         <div className='project_img'>
                             <img className='rounded-[10px] ' src={Pinterest} alt='Ecommerce' />
                         </div>
                         <p className='text-[25px] font-[700] mt-[20px]'>Pinterest UI Web App</p>
                     </div>
-                    <div className='box_shadow rounded-[10px] mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowTesla(true)}>
+                    <div className='box_shadow rounded-[10px] mx-6 mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowTesla(true)}>
                         <div className='project_img'>
                             <img className='rounded-[10px] ' src={Tesla} alt='Ecommerce' />
                         </div>
                         <p className='text-[25px] font-[700] mt-[20px]'>Tesla UI Web App</p>
                     </div>
-                    <div className='box_shadow rounded-[10px] mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowProjest(true)}>
+                    <div className='box_shadow rounded-[10px] mx-6 mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowProjest(true)}>
                         <div className='project_img'>
                             <img className='rounded-[10px] ' src={projest} alt='Projest' />
                         </div>
                         <p className='text-[25px] font-[700] mt-[20px]'>Projest</p>
                     </div>
-                    <div className='box_shadow rounded-[10px] mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowResumeBuilder(true)}>
+                    <div className='box_shadow rounded-[10px] mx-6 mb-[30px] p-[30px] cursor-pointer' onClick={() => setShowResumeBuilder(true)}>
                         <div className='project_img'>
                             <img className='rounded-[10px] ' src={resume} alt='resume' />
                         </div>
@@ -72,10 +72,10 @@ const Projects = () => {
                 leaveTo="opacity-0"
             >
                 <div className="relative z-10 h-[100%] overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-                    <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity h-[100%]"></div>
+                    <div className="fixed inset-0 bg-[#a5d1fe] bg-opacity-175 transition-opacity h-[100%]"></div>
                     <div className="fixed inset-0 z-10 overflow-y-auto h-[100%] ">
                         <div className="flex justify-center p-4 text-center items-center sm:p-0 h-[100%] " >
-                            <div className="p-[40px] h-[80%] pt-[30px] w-[80%] relative transform overflow-y-auto rounded-lg bg-white text-left shadow-xl transition-all box_shadow">
+                            <div className="p-[40px] h-[80%] pt-[30px] w-[80%] relative transform overflow-y-auto rounded-lg bg-white-700 text-left shadow-xl transition-all box_shadow">
                                 <CgClose className='close_model ml-[auto] mr-[0]  cursor-pointer' onClick={() => setShowEcommerce(false)} />
                                 <div className=' mt-[10px] grid grid-cols-1 md:grid-cols-2'>
                                     <img className='rounded-[10px] h-[450px] w-[550px] ' src={Ecomerce} alt='Ecommerce' />
