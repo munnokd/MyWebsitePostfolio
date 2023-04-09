@@ -13,7 +13,7 @@ function App() {
   return (
     <div className='main_body'>
       <Navbar />
-      <div className='w-[100%] bg_image'>
+      <div className='w-[100%]'>
         <Home />
         <AboutMe />
         <Technology />

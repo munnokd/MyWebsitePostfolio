@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className="bg-gray-800 fixed w-[100%] z-[100]">
             <div className="mx-auto max-w-7xl px-2 md:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
-                <div onClick={handleClick} className='md:hidden z-10'>
+                <div onClick={handleClick} className='md:hidden z-10 cursor-pointer'>
                     {!navbar ? <FaBars color='white' /> : <FaTimes color='white' />}
                 </div>
                     <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
@@ -53,9 +53,6 @@ export default function Navbar() {
                                     </Link>
                                 ))}
                             </div>
-                        </div>
-                        <div>
-                            <a href='https://drive.google.com/file/d/1I-gnZKiJ4xvJxmMwDDE3IA0f6vnIfdNG/view?usp=share_link' target='_blank' rel="noreferrer" className='bg-white text-black px-3 py-2 ml-4 rounded-sm hover:cursor-pointer' >Resume</a>
                         </div>
                     </div>
                 </div>

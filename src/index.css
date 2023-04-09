@@ -3,13 +3,23 @@
 .main_body{
     width: 100% !important;
 }
-
-.bg_image{
-    background: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+::-webkit-scrollbar-track {
+    border-radius: 0.125rem;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
 }
+::-webkit-scrollbar {
+    width: 0.55rem;
+    border-radius: 0.125rem;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 0.125rem;
+    background-color: rgb(169, 169, 169);
+}
+
 .box_shadow{
-    background: rgba( 255, 255, 255, 0.4 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background: rgba( 255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.25 );
     backdrop-filter: blur( 20px );
     -webkit-backdrop-filter: blur( 20px );
     border-radius: 10px;
