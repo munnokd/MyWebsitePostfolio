@@ -29,13 +29,6 @@ const Experience = () => {
                             <p className='text-[15px] sm:text-[18px]'>2019 - 2023</p>
                         </div>
                     </div>
-                    <div className='box_shadow rounded-[10px] mx-0 sm:mx-5 mb-[30px] p-[30px]'>
-                        <h1 className='text-[20px] sm:text-[25px] font-bold mb-[10px]'>12th -Science Board</h1>
-                        <div className='flex justify-between '>
-                            <p className='text-[15px] sm:text-[18px]'>Nootan Serva Vidhyalay, Visnagar</p>
-                            <p className='text-[15px] sm:text-[18px]'>2017 - 2019</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
