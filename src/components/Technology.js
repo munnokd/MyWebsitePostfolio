@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiJavascript, SiHtml5, SiCss3, SiJava, SiMysql, SiReact, SiBootstrap, SiTailwindcss, SiGithub, SiRedux, SiNodedotjs, SiExpress, SiMongodb, SiPostman, SiSequelize, SiDocker } from 'react-icons/si'
+import { SiJavascript, SiHtml5, SiCss3, SiJava, SiMysql, SiReact, SiBootstrap, SiTailwindcss, SiGithub, SiRedux, SiNodedotjs, SiExpress, SiMongodb, SiPostman, SiSequelize, SiDocker, SiTypescript } from 'react-icons/si'
 import webHosting from '../assests/web-hosting.png'
 import rest from '../assests/rest.png'
 import mui from '../assests/mui.png'
@@ -36,6 +36,12 @@ const Technology = () => {
                             <div className='flex items-center box_shadow'>
                                 <SiJava color='#0170BA' style={{ background: 'white' }} />
                                 <p>Java</p>
+                            </div>
+                        </Zoom>
+                        <Zoom top>
+                            <div className='flex items-center box_shadow'>
+                                <SiTypescript color='#3178c6' style={{ background: 'white' }} />
+                                <p>Typescript</p>
                             </div>
                         </Zoom>
                         <Zoom top>
@@ -126,12 +132,6 @@ const Technology = () => {
                             <div className='flex items-center box_shadow'>
                                 <img src={rest} alt='' style={{ height: '1em', width: '1em' }} />
                                 <p>Rest API</p>
-                            </div>
-                        </Zoom>
-                        <Zoom top>
-                            <div className='flex items-center box_shadow'>
-                                <img src={webHosting} alt='' style={{ height: '1em', width: '1em' }} />
-                                <p>Web Hosting</p>
                             </div>
                         </Zoom>
                     </div>
