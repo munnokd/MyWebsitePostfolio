@@ -44,6 +44,7 @@ const Technology = () => {
                                 <p>Typescript</p>
                             </div>
                         </Zoom>
+                        
                         <Zoom top>
                             <div className='flex items-center box_shadow'>
                                 <SiMysql color='#F29111' style={{ background: 'white' }} />

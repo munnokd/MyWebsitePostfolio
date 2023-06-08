@@ -14,7 +14,7 @@ const Home = () => {
                     </Slide>
                     <Slide top>
                         <div className='flex mt-10'>
-                            <a href='https://drive.google.com/file/d/11t0ho3r7SrBrZkr0wOqF1ApAKHKK2AHO/view?usp=share_link' target='_blank' rel="noreferrer" className='font-[500] mr-3 w-[50%] bg-gray-800 text-white px-3 py-2 rounded-sm hover:cursor-pointer text-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300' >Resume</a>
+                            <a href='https://drive.google.com/file/d/1ny6RaWh3fIlmhFPtByGPSjg2AlETTTrD/view?usp=share_link' target='_blank' rel="noreferrer" className='font-[500] mr-3 w-[50%] bg-gray-800 text-white px-3 py-2 rounded-sm hover:cursor-pointer text-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300' >Resume</a>
                             <a href='https://github.com/munnokd' target='_blank' rel="noreferrer" className='font-[500] ml-3 w-[50%] bg-gray-800 text-white px-3 py-2 rounded-sm hover:cursor-pointer text-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300' >Github</a>
                         </div>
                     </Slide>

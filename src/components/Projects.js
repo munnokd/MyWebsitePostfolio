@@ -231,7 +231,7 @@ const Projects = () => {
                                         <p className='text-[16px] lg:text-[18px] font-[400]'><span className='text-[16px] lg:text-[18px] font-[600]'>Tech :</span> React.js, Html, Javascript, Css, Firebase, Tailwind.css</p>
 
                                         <div className='grid grid-cols-1 lg:grid-cols-2 mt-[30px]'>
-                                            <a className='box_shadow lg:w-[200px] text-[#fd7014] flex items-center cursor-pointer' href='https://projest-290c8.web.app/' alt="" target='_blank' rel="noreferrer"><RiLink className='mr-[10px]' color='black' />Live</a>
+                                            <a className='box_shadow lg:w-[200px] text-[#fd7014] flex items-center cursor-pointer' href='https://projest.vercel.app/' alt="" target='_blank' rel="noreferrer"><RiLink className='mr-[10px]' color='black' />Live</a>
                                             <a className='box_shadow my-[30px] lg:my-0 lg:w-[200px] text-[#fd7014] flex items-center cursor-pointer' href='https://github.com/munnokd/Projest' alt="" target='_blank' rel="noreferrer"><SiGithub className='mr-[10px]' color='black' />Github </a>
                                         </div>
                                     </div>
@@ -264,7 +264,7 @@ const Projects = () => {
                                         <p className='text-[16px] lg:text-[18px] font-[400]'><span className='text-[16px] lg:text-[18px] font-[600]'>Tech :</span> React.js, Html, Javascript, Css</p>
 
                                         <div className='grid grid-cols-1 lg:grid-cols-2 mt-[30px]'>
-                                            <a className='box_shadow lg:w-[200px] text-[#fd7014] flex items-center cursor-pointer' href='https://resume-genrator.vercel.app/' alt="" target='_blank' rel="noreferrer"><RiLink className='mr-[10px]' color='black' />Live</a>
+                                            <a className='box_shadow lg:w-[200px] text-[#fd7014] flex items-center cursor-pointer' href='https://resume-generator-xi.vercel.app/' alt="" target='_blank' rel="noreferrer"><RiLink className='mr-[10px]' color='black' />Live</a>
                                             <a className='box_shadow my-[30px] lg:my-0 lg:w-[200px] text-[#fd7014] flex items-center cursor-pointer' href='https://github.com/munnokd/Resume-Genrator' alt="" target='_blank' rel="noreferrer"><SiGithub className='mr-[10px]' color='black' />Github </a>
                                         </div>
                                     </div>
