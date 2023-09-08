@@ -12,9 +12,16 @@ const Experience = () => {
                         <h1 className='text-[20px]  sm:text-[25px] font-bold mb-[10px]'>Software Developer</h1>
                         <div className='flex justify-between mb-[30px]'>
                             <p className='text-[15px] sm:text-[18px] font-[500]'>DasInfomedia - Ahmedabad</p>
-                            <p className='text-[15px] sm:text-[18px] font-[500]'>Jan - 2023</p>
+                            <p className='text-[15px] sm:text-[18px] font-[500]'>August,2023 - Present,2023</p>
                         </div>
-                        <p className='text-[14px] sm:text-[17px]'>Currently, I am a Software Developer Intern at DasInfomedia, working on a live project using React.js. This project (of Gujarat Government's Education Department) involves creating a Vehicle Tracking System using React.js, MUI, Docker, MariaDB, Node.js, Express.js, and API</p>
+                        <p className='text-[14px] sm:text-[17px]'>Currently, I am a Software Developer at DasInfomedia, working on a live project using React.js. This project (of Gujarat Government's Education Department) involves creating a Vehicle Tracking System using React.js, MUI, Docker, MariaDB, Node.js, Express.js, and API</p>
+                    </div>
+                    <div className='box_shadow rounded-[10px] mx-0 sm:mx-5 mb-[50px] p-[30px]'>
+                        <h1 className='text-[20px]  sm:text-[25px] font-bold mb-[10px]'>Software Developer Intern</h1>
+                        <div className='flex justify-between mb-[30px]'>
+                            <p className='text-[15px] sm:text-[18px] font-[500]'>DasInfomedia - Ahmedabad</p>
+                            <p className='text-[15px] sm:text-[18px] font-[500]'>Jan,2023 - June,2023</p>
+                        </div>
                     </div>
                     <div className='mb-[30px] text-[24px] sm:text-[30px] font-bold'>Volunteer Experience :</div>
                     <div className='box_shadow rounded-[10px] mx-0 sm:mx-5 mb-[50px] p-[30px]'>

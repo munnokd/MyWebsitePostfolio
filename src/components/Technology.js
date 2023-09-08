@@ -1,6 +1,5 @@
 import React from 'react'
 import { SiJavascript, SiHtml5, SiCss3, SiJava, SiMysql, SiReact, SiBootstrap, SiTailwindcss, SiGithub, SiRedux, SiNodedotjs, SiExpress, SiMongodb, SiPostman, SiSequelize, SiDocker, SiTypescript } from 'react-icons/si'
-import webHosting from '../assests/web-hosting.png'
 import rest from '../assests/rest.png'
 import mui from '../assests/mui.png'
 import fire from '../assests/firebase.png'
